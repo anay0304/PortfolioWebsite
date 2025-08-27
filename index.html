@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anay Pradhan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="style.css?v=999">
+
+
+
+</head>
+<body>
+  <header class="site-header">
+  <!-- Top row: brand + contact -->
+  <div class="container header-top">
+    <div class="brand">
+      <!-- Optional logo -->
+      <!-- <img src="images/logo.svg" alt="" class="brand-logo" /> -->
+      <div class="brand-text">
+        <a href="#home" class="brand-name">Anay Pradhan</a>
+        </div>
+    </div>
+
+    <div class="contact-meta">
+  <a class="meta" href="mailto:anaypradhan3849@gmail.com">
+    <span class="label">Write Me</span>
+    <span class="value">
+      <!-- mail icon -->
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 3-8 5L4 7V6l8 5 8-5v1z"/>
+      </svg>
+      <span>anaypradhan3849@gmail.com</span>
+    </span>
+  </a>
+
+  <a class="meta" href="tel:+16025661609" aria-label="Call +1 602 566 1609">
+    <span class="label">Call Me</span>
+    <span class="value">
+      <!-- phone icon -->
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1.1-.24c1.2.48 2.6.74 4 .74a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.8 21 3 12.2 3 3a1 1 0 0 1 1-1h3.3a1 1 0 0 1 1 1c0 1.4.26 2.8.74 4a1 1 0 0 1-.24 1.1L6.6 10.8z"/>
+      </svg>
+      <span>+1 (602) 566-1609</span>
+    </span>
+  </a>
+</div>
+
+  </div>
+
+  <hr class="header-sep" />
+
+  <!-- Bottom row: nav + socials -->
+  <div class="container header-bottom">
+    <nav class="primary-nav">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#activities">Activities</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="socials">
+  <a href="https://www.instagram.com/anaysfitnessdiary/" target="_blank" class="social ig" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/@AnaysFitness" target="_blank" class="social yt" aria-label="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/anay-pradhan/" target="_blank" class="social in" aria-label="LinkedIn">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+</div>
+
+  </div>
+</header>
+
+  <!-- HERO = default tab -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Hello, I’m Anay!</h1>
+        <p class="subtitle">
+          I’m a senior-year Computer Science student at Arizona State University specializing in full-stack development, cloud computing, and applied AI. 
+          I build scalable, impactful applications that combine technical precision with user-focused design.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-resume" href="https://drive.google.com/file/d/1D4af4IHzbwQVGk5bA9LnU25jypulOHnV/view?usp=sharing" target="_blank" rel="noreferrer" download>
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <path fill="currentColor" d="M12 3v10.59l3.3-3.3 1.4 1.42L12 17.42 7.3 11.7l1.4-1.41 3.3 3.3V3h2zM5 19h14v2H5z"/>
+  </svg>
+  <span>Resume</span>
+</a>
+
+        </div>
+      </div>
+
+      <!-- Use forward slashes; optional WebP source (remove <source> if you don't have it) -->
+      <picture>
+        <!-- <source srcset="images/IMG_9683.webp" type="image/webp" /> -->
+        <img
+          src="images/IMG_7904.PNG"
+          alt="Anay Pradhan"
+          width="880" height="640"
+          loading="eager" fetchpriority="high"
+          class="hero-photo"
+        />
+      </picture>
+    </div>
+  </section>
+
+  <main>
+    
+    <section id="education" class="site-section">
+  <h2 tabindex="-1">Education</h2>
+
+  <div class="edu-grid">
+    <!-- Card 1 -->
+    <article class="edu-card edu-card--with-hero">
+      <figure class="edu-hero">
+        <img src="images/ASU.jpg" alt="Arizona State University" class="edu-hero-img">
+      </figure>
+
+      <div class="edu-body">
+        <header class="edu-header">
+          <!-- Optional tiny logo -->
+          <img src="images/asulogo.jpg" alt="" class="edu-logo">
+          <div>
+            <h3 class="edu-school">Arizona State University</h3>
+            <div class="edu-sub">Ira A. Fulton Schools of Engineering</div>
+          </div>
+        </header>
+
+        <p class="edu-degree">B.S.E. in Computer Science</p>
+
+        <div class="edu-meta">
+          <span class="chip">Expected May 2026</span>
+          <span class="chip">GPA: 3.7/4.0</span>
+          <span class="chip">Dean’s List</span>
+        </div>
+
+        <details class="edu-courses" open>
+          <summary>Relevant Coursework</summary>
+          <ul class="course-chips">
+            <li>Data Structures & Algorithms</li>
+            <li>Machine Learning</li>
+            <li>Object Oriented Programming</li>
+            <li>Mobile App Development</li>
+            <li>Operating Systems</li>
+            <li>Distributed Software Development</li>
+            <li>Theoretical Computer Science</li>
+          </ul>
+        </details>
+      </div>
+    </article>
+
+    <!-- Card 2 (duplicate; edit these details) -->
+    <article class="edu-card edu-card--with-hero">
+      <figure class="edu-hero">
+        <img src="images/RuiaBanner.jpg" alt="Your second school" class="edu-hero-img">
+      </figure>
+
+      <div class="edu-body">
+        <header class="edu-header">
+          <img src="images/RuiaSmallLogo.png" alt="" class="edu-logo">
+          <div>
+            <h3 class="edu-school">Ramnivas Ruia Jr. College</h3>
+           </div>
+        </header>
+
+        <p class="edu-degree">Computer Science</p>
+
+        <div class="edu-meta">
+          <span class="chip">Graduated May 2022</span>
+          <span class="chip">GPA: 3.7/4.0</span>
+          </div>
+
+        <details class="edu-courses" open>
+          <summary>Relevant Coursework</summary>
+          <ul class="course-chips">
+            <li>Assembly Language Programming</li>
+            <li>Programming in C++</li>
+            <li>Course Three</li>
+          </ul>
+        </details>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  <section id="skills" class="site-section">
+  <h2 tabindex="-1">Skills</h2>
+
+  <!-- Languages -->
+  <h3 class="skills-group-title">Languages</h3>
+  <ul class="skills-cards">
+    <li><i class="devicon-python-plain colored" aria-hidden="true"></i><span class="label">Python</span></li>
+    <li><i class="devicon-java-plain colored" aria-hidden="true"></i><span class="label">Java</span></li>
+    <li><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span class="label">JavaScript</span></li>
+    <li><i class="devicon-typescript-plain colored" aria-hidden="true"></i><span class="label">TypeScript</span></li>
+    <li><i class="devicon-csharp-plain colored" aria-hidden="true"></i><span class="label">C#</span></li>
+    <li><i class="devicon-html5-plain colored" aria-hidden="true"></i><span class="label">HTML5</span></li>
+    <li><i class="devicon-css3-plain colored" aria-hidden="true"></i><span class="label">CSS3</span></li>
+    <li><i class="devicon-r-plain colored" aria-hidden="true"></i><span class="label">R</span></li>
+    <li><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span class="label">SQL</span></li>
+  </ul>
+
+  <!-- Frameworks & Libraries -->
+  <h3 class="skills-group-title">Frameworks & Libraries</h3>
+  <ul class="skills-cards">
+    <li><i class="devicon-react-original colored" aria-hidden="true"></i><span class="label">React</span></li>
+    <li><i class="devicon-nodejs-plain colored" aria-hidden="true"></i><span class="label">Node.js</span></li>
+    <li><i class="devicon-express-original" aria-hidden="true"></i><span class="label">Express</span></li>
+    <li><i class="devicon-django-plain colored" aria-hidden="true"></i><span class="label">Django</span></li>
+    <li><i class="devicon-dotnetcore-plain colored" aria-hidden="true"></i><span class="label">ASP.NET / .NET</span></li>
+    <li><i class="devicon-tensorflow-original colored" aria-hidden="true"></i><span class="label">TensorFlow</span></li>
+    <li><i class="devicon-pytorch-original colored" aria-hidden="true"></i><span class="label">PyTorch</span></li>
+    <li><i class="devicon-bootstrap-plain colored" aria-hidden="true"></i><span class="label">Bootstrap</span></li>
+    <li><i class="devicon-chartjs-plain colored" aria-hidden="true"></i><span class="label">Chart.js</span></li>
+  </ul>
+
+  <!-- Tools & Platforms -->
+  <h3 class="skills-group-title">Tools & Platforms</h3>
+  <ul class="skills-cards">
+    <li><i class="devicon-amazonwebservices-original colored" aria-hidden="true"></i><span class="label">AWS</span></li>
+    <li><i class="devicon-postgresql-plain colored" aria-hidden="true"></i><span class="label">PostgreSQL</span></li>
+    <li><i class="devicon-sqlite-plain colored" aria-hidden="true"></i><span class="label">SQLite</span></li>
+    <li><i class="devicon-docker-plain colored" aria-hidden="true"></i><span class="label">Docker</span></li>
+    <li><i class="devicon-git-plain colored" aria-hidden="true"></i><span class="label">Git</span></li>
+    <li><i class="devicon-github-original colored" aria-hidden="true"></i><span class="label">GitHub</span></li>
+    <li><i class="devicon-postman-plain colored" aria-hidden="true"></i><span class="label">Postman</span></li>
+    <li><i class="devicon-ubuntu-plain colored" aria-hidden="true"></i><span class="label">Ubuntu / Linux</span></li>
+    <li><i class="devicon-numpy-original colored" aria-hidden="true"></i><span class="label">NumPy</span></li>
+    <li><i class="devicon-pandas-original colored" aria-hidden="true"></i><span class="label">Pandas</span></li>
+    <li><i class="devicon-jupyter-plain colored" aria-hidden="true"></i><span class="label">Jupyter</span></li>
+  </ul>
+</section>
+
+
+
+    <section id="experience" class="site-section">
+      <h2 tabindex="-1">Experience</h2>
+      <div>
+        <h3 class="expTitle">Learning Engineering Institute, Tempe, AZ</h3>
+        <p><em>Software Developer Volunteer</em> — Jun 2025 – Present</p>
+        <ul>
+          <li>Built RESTful services using ASP.NET and C# to support internal client tools; collaborated across QA, design, and product for agile delivery.</li>
+          <li>Integrated and tested new features with version control (Git), reducing UI latency by 15% and optimizing user interaction workflows.</li>
+          <li>Supported cross-functional debugging efforts and documented changes to improve onboarding for new devs.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="expTitle">Enterprise Technology, Tempe, AZ</h3>
+        <p><em>Technology Consultant</em> — Start 2023 – Present</p>
+        <ul>
+          <li>Provided technical support and system diagnostics across 200+ classrooms, showcasing strong analytical and problem-solving skills.</li>
+          <li>Collaborated with engineering staff to maintain mission-critical technology used in real-time instruction environments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="site-section">
+      <h2 tabindex="-1">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" tabindex="0" aria-label="Expand Nutramigo project card">
+          <div class="project-card-content">
+            <img src="images/nutramigo.png" alt="Nutramigo screenshot" class="project-img" />
+            <h3>Nutramigo — Macro & Calorie Coach</h3>
+            <div class="project-short-desc">
+              Full-stack nutrition tracker with secure auth, API integration, and real-time analytics.
+            </div>
+            <div class="project-details">
+              <div class="project-links">
+                <a href="https://github.com/anay0304/nutramigo.git" target="_blank" class="project-link-btn">Code</a>
+                <a href="https://nutramigo.onrender.com/" target="_blank" class="project-link-btn">Demo</a>
+              </div>
+              <ul>
+                <li>Engineered a full-stack nutrition tracker (Django + PostgreSQL) with secure auth and demo access, enabling 50+ daily logins and 100+ food entries during testing.</li>
+                <li>Reduced manual entry time by 40% through OpenFoodFacts API integration, quick-add meals, and favorites functionality.</li>
+                <li>Enhanced user experience by integrating 7-day Chart.js visualizations, AI-generated meal tips, and a persisted dark/light theme.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" tabindex="0" aria-label="Expand SERA project card">
+          <div class="project-card-content">
+            <img src="images/SERA.png" alt="SERA screenshot" class="project-img" />
+            <h3>SERA – AI Sexual Health Chatbot</h3>
+            <div class="project-short-desc">
+              AI-powered chatbot for sexual health, with secure RESTful APIs and real-time LLM responses.
+            </div>
+            <div class="project-details">
+              <div class="project-links">
+                <a href="https://github.com/anay0304/SERA-AI-Backend.git" target="_blank" class="project-link-btn">Code</a>
+                <a href="https://ai-sex-doc-front-ps5pff7h8-rahul-bawejas-projects.vercel.app/login.html" target="_blank" class="project-link-btn">Demo</a>
+              </div>
+              <ul>
+                <li>Engineered a full-stack chatbot integrating OpenAI’s LLM APIs for real-time natural language responses.</li>
+                <li>Developed secure RESTful API integrations for frontend-backend communication; handled token-based authentication, user state management, and reusable React components.</li>
+                <li>Applied agile development practices to collaborate on LLM prompt tuning, model testing, and performance optimization.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities" class="site-section">
+  <h2 tabindex="-1">Technical Activities</h2>
+
+  <div class="act-grid">
+    <!-- Card 1 -->
+    <article class="act-card">
+      <figure class="act-hero">
+        <!-- put your image here -->
+        <img src="images/PromptEngineeringCertificate.png" alt="Prompt Engineering for Developers – certificate" class="act-thumb">
+      </figure>
+      <div class="act-body">
+        <h3 class="act-title">Prompt Engineering for Developers</h3>
+        <div class="act-meta">
+          <span class="chip">Udemy</span>
+          <span class="chip">Aug 2025</span>
+          <span class="chip">Remote</span>
+        </div>
+        <p class="act-desc">
+          Built hands-on expertise with prompt design, LLM integration, and chatbot/recommendation
+          systems in Python.
+        </p>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="act-card">
+      <figure class="act-hero">
+        <img src="images/frame.png" alt="GHW GenAI Week – Major League Hacking" class="act-thumbFrame">
+      </figure>
+      <div class="act-body">
+        <h3 class="act-titleAI">GHW GenAI Week – Major League Hacking</h3>
+        <div class="act-meta">
+          <span class="chip">June 2025</span>
+          <span class="chip">Remote</span>
+        </div>
+        <p class="act-desc">
+          Workshops on AI Q&amp;A interfaces (Oracle APEX), AI agent creation, and prompt engineering.
+        </p>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="act-card">
+      <figure class="act-hero">
+        <img src="images/AWSCertificate.png" alt="AWS Solutions Architect virtual job simulation" class="act-thumb">
+      </figure>
+      <div class="act-body">
+        <h3 class="act-title">AWS Solutions Architect</h3>
+        <div class="act-meta">
+          <span class="chip">Forage</span>
+          <span class="chip">June 2025</span>
+          <span class="chip">Remote</span>
+        </div>
+        <p class="act-desc">
+          Designed scalable AWS architectures (EC2, S3, ELB) with cost optimization and security compliance.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+  
+<section id="about" class="site-section about">
+  <h2 tabindex="-1">About</h2>
+
+  <div class="about-grid">
+    <!-- Lead + chips -->
+    <div class="about-lead">
+      <p class="lead">
+        I’m <mark>Anay Pradhan</mark>, a CS senior at Arizona State University who ships reliable
+        full-stack apps with thoughtful UIs and applied-AI features. I care about performance,
+        accessibility, and clean, maintainable systems.
+      </p>
+
+      
+      <ul class="about-chips">
+        <li>ASU • B.S.E. Computer Science • May 2026</li>
+        <li>Full-stack • React/TypeScript • Django/ASP.NET</li>
+        <li>LLM integrations • RAG/Agents • AWS</li>
+        <li>Tempe, AZ • Open to Remote/Hybrid</li>
+      </ul>
+    </div>
+
+    <!-- Two columns -->
+    <div class="about-cols">
+      <div class="about-col">
+        <h3>Recent work</h3>
+        <ul class="about-list">
+          <li><strong>Nutramigo</strong> — calorie & macro tracker (Django + PostgreSQL, OpenFoodFacts API, charts).</li>
+          <li><strong>SERA</strong> — AI sexual-health chatbot (secure REST APIs + real-time LLM responses).</li>
+        </ul>
+      </div>
+
+      </div>
+
+      <p>Beyond SWE, I create evidence-based fitness content on Instagram and YouTube, 
+        which helps me iterate the qualities of discipline, consistency, and constant growth.
+      The same qualities which I carry into my SWE career path.</p>
+
+
+    
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anay Pradhan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
