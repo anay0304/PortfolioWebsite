@@ -1426,3 +1426,20 @@ a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.08); }
   .edu-card{ padding:16px; border-radius:14px; }
   #education .edu-grid{ grid-template-columns: 1fr; gap:16px; }
 }
+
+
+#education .edu-grid { margin-top: -162px; }
+
+/* Desktop: keep the lifted cards */
+@media (min-width: 980px){
+  #education .edu-grid{ margin-top: -160px; }  /* whatever you used before */
+}
+
+/* Mobile: drop the cards down so they don't cover the socials */
+@media (max-width: 979px){
+  #education .edu-grid{ margin-top: 16px; }    /* 0–24px to taste */
+}
+
+
+/* Make anchor scroll stop below the sticky header */
+#education h2 { scroll-margin-top: 120px; }    /* tune to your header height */
