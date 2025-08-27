@@ -1274,3 +1274,57 @@ main{
   font-weight: 800;
   color: black;
 }
+
+/* --- Mobile header layout & sizing fixes --- */
+@media (max-width: 700px) {
+  /* Stack the top header content */
+  .header-top{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  /* Stack email/phone chips full width */
+  .contact-meta{
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  /* Let the chip fit the screen; reduce padding/font a bit */
+  .meta{
+    width: 100%;
+    min-width: 0;            /* was 260px */
+    padding: 10px 12px;
+    box-sizing: border-box;
+  }
+  .meta .label{ display:none; }               /* hide “Write Me / Call Me” to save space */
+  .meta .value{ font-size: 0.98rem; }
+
+  /* Nav row below: let it wrap nicely */
+  .header-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 6px;
+  }
+  .primary-nav{
+    flex-wrap: wrap;
+    gap: 12px 16px;
+  }
+  .socials{ margin-left: 0; gap: 10px; }
+
+  /* Brand text and overall header scale */
+  .brand-name{ font-size: clamp(1.25rem, 4.5vw, 1.6rem); }
+}
+
+/* Optional: for very small phones, hide the email/phone text and show icon only */
+@media (max-width: 420px){
+  .meta .value span{ display:none; }   /* keeps the icon visible */
+}
+
+@media (max-width: 900px){
+  .hero { padding-block: clamp(20px, 7vh, 56px); }
+  .hero .hero-copy{ margin-top: 0; }
+}
