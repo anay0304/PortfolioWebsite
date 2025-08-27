@@ -1443,3 +1443,39 @@ a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.08); }
 
 /* Make anchor scroll stop below the sticky header */
 #education h2 { scroll-margin-top: 120px; }    /* tune to your header height */
+
+
+.hero::after{
+  position:absolute; inset:0;
+  z-index:1;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,.95) 0%,
+    rgba(255,255,255,.85) 35%,
+    rgba(255,255,255,.25) 60%,
+    rgba(255,255,255,0) 80%
+  );
+}
+
+
+/* On phones, remove the hero overlay so the photo stays crisp */
+@media (max-width: 900px){
+  .hero::after { content: none; }   /* or background: none; */
+  /* optional: also remove the bottom melt if you want */
+  /* .hero::before { content: none; } */
+}
+
+
+/* Remove the full-hero overlay */
+.hero::after { content: none; }
+
+/* Put a small fade only behind the text block */
+.hero .hero-copy{ position: relative; }
+.hero .hero-copy::after{
+  content:"";
+  position:absolute;
+  inset:-8px -8px -8px -8px;         /* small halo around text */
+  background:linear-gradient(to right, rgba(255,255,255,.9), rgba(255,255,255,0));
+  z-index:-1;                        /* behind the text */
+}
+
+
