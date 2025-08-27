@@ -1362,3 +1362,67 @@ main{
 
 /* Prevent accidental focus rings on images */
 img{ -webkit-user-select: none; user-select: none; }
+
+
+.edu-card { border-left: 4px solid #06b6d4; }
+
+/* Mobile polish for education cards */
+@media (max-width: 740px){
+  /* Remove the left accent line on mobile */
+  .edu-card{ border-left: none; }
+
+  /* Make sure iOS doesn’t draw a focus ring on a non-interactive card */
+  .edu-card:focus,
+  .edu-card:focus-within{ outline: none; }
+}
+
+
+@media (max-width:740px){
+  .edu-card{ position: relative; }
+  .edu-card::before{
+    content:"";
+    position:absolute; left:0; right:0; top:0;
+    height:4px; border-radius:4px 4px 0 0;
+    background:#06b6d4;
+  }
+}
+
+
+#education .edu-hero-img{
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+
+@media (max-width: 740px){
+  .edu-hero{ margin: 0 -16px 12px; }        /* stretch media to card edges */
+  .edu-hero-img{
+    display:block;
+    width:100%;
+    height:auto;          /* use the image’s natural height */
+    aspect-ratio:auto;
+    object-fit: contain;  /* no crop — letterbox if needed */
+    background:#f3f4f6;   /* soft backdrop behind any letterboxing */
+  }
+}
+
+
+@media (max-width: 740px){
+  .edu-hero-img{
+    aspect-ratio: 5 / 3;           /* friendlier crop for phones */
+    object-fit: cover;
+    object-position: center top;   /* keeps crest/text higher in view */
+  }
+}
+
+
+/* Remove tap highlight on non-interactive media */
+img, figure { outline: none; -webkit-tap-highlight-color: transparent; }
+/* Keep links/buttons accessible; don’t kill their focus styles */
+a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.08); }
+
+
+@media (max-width:740px){
+  .edu-card{ padding:16px; border-radius:14px; }
+  #education .edu-grid{ grid-template-columns: 1fr; gap:16px; }
+}
