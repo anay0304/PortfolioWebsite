@@ -1196,6 +1196,7 @@ main{
   margin: 0 0 10px;
   color: #0f172a;
   max-width: 80ch;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* subtle text highlight */
@@ -1479,3 +1480,12 @@ a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.08); }
 }
 
 
+.aboutText{
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.65;
+  margin: 0 0 10px;
+  color: #0f172a;
+  max-width: 80ch;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
