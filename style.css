@@ -1328,3 +1328,37 @@ main{
   .hero { padding-block: clamp(20px, 7vh, 56px); }
   .hero .hero-copy{ margin-top: 0; }
 }
+
+
+/* Normalize subtitle – no cursive on mobile */
+.hero .subtitle{
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.edu-hero-img { outline: none; }
+
+#education .edu-hero-img{
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+
+@media (max-width: 740px){
+  #education .edu-hero-img{
+    aspect-ratio: 5 / 3;          /* friendlier crop */
+    object-fit: cover;
+    object-position: center top;  /* keeps logo visible */
+  }
+}
+
+
+/* Make hero a little tighter on small screens */
+@media (max-width: 740px){
+  .hero{ padding-top: 20px; }
+}
+
+/* Prevent accidental focus rings on images */
+img{ -webkit-user-select: none; user-select: none; }
