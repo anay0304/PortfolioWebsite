@@ -1001,7 +1001,7 @@ main{
 
 /* (Last resort) Only pull the Skills section up a touch */
 #skills{
-  margin-top: -88px;                  /* use small negative values if needed */
+  margin-top: -45px;                  /* use small negative values if needed */
 }
 
 
